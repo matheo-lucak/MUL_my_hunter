@@ -16,7 +16,7 @@ int init_window(win_t *win , int width, int height)
     win->video_mode.bitsPerPixel = 32;
     win->window = sfRenderWindow_create(win->video_mode,
         "DuckyDucky Feeder", sfClose | sfDefaultStyle, NULL);
-    sfRenderWindow_setFramerateLimit(win->window, 30);
+    sfRenderWindow_setFramerateLimit(win->window, 15);
     win->life = 3;
     win->lvl = 1;
     win->score = 0;
